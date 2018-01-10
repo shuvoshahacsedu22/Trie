@@ -72,7 +72,7 @@ int countWord(Trie *root, string str, int idx)
 
     if(str.size()==idx)
     {
-        return root->NoOfChild_prefixes;
+        return root->endOfword;
     }
 
     if(root->children[idx]==NULL) return 0;
